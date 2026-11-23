@@ -53,10 +53,12 @@ export default function App({ phone = "+1 (754) 210-1105", autoplay = true }) {
     bg: i === slide ? "#274962" : "#B9C4CC",
     go: () => go(i),
   }));
+  const stageLabel = pr.photos[photo].label;
   const photos = pr.photos.map((ph, i) => ({
     src: asset(ph.src),
-    alt: pr.name + " project photo",
-    aria: "Show photo " + (i + 1) + " of " + pr.photos.length,
+    label: ph.label,
+    alt: pr.name + " - " + ph.label,
+    aria: "Show photo " + (i + 1) + " of " + pr.photos.length + ": " + ph.label,
     op: i === photo ? 1 : 0,
     top: i === photo ? 1 : 0.6,
     ring: i === photo ? "2px solid #C9A66B" : "2px solid transparent",
@@ -154,11 +156,13 @@ Call to schedule a visit
 {photos.map((p,i)=>(<React.Fragment key={i}>
 <img src={p.src} alt={p.alt} style={{"position":"absolute","inset":"0","width":"100%","height":"100%","objectFit":"cover","display":"block","transition":"opacity .9s ease","opacity":p.op}} />
 </React.Fragment>))}
+<div style={{"position":"absolute","left":"16px","top":"16px","display":"inline-flex","alignItems":"center","gap":"8px","padding":"8px 14px","background":"rgba(20,32,43,.85)","color":"#FFFFFF","fontFamily":"'Montserrat',sans-serif","fontWeight":"600","fontSize":"12px","lineHeight":"16px","letterSpacing":"2px","textTransform":"uppercase"}}><span style={{"width":"8px","height":"8px","borderRadius":"50%","background":"#C9A66B","display":"block"}}></span>{stageLabel}</div>
 </div>
 <div style={{"display":"flex","gap":"12px"}}>
 {photos.map((p,i)=>(<React.Fragment key={i}>
 <button type="button" aria-label={p.aria} onClick={p.pick} style={{"flex":"1 1 0","minWidth":"0","border":"0","background":"transparent","padding":"0","cursor":"pointer","display":"flex","flexDirection":"column","gap":"8px","textAlign":"left","opacity":p.top,"transition":"opacity .3s ease"}}>
 <span style={{"display":"block","width":"100%","aspectRatio":"4/3","overflow":"hidden","outline":p.ring,"outlineOffset":"2px"}}><img src={p.src} alt="" style={{"width":"100%","height":"100%","objectFit":"cover","display":"block"}} /></span>
+<span style={{"fontFamily":"'Montserrat',sans-serif","fontWeight":"600","fontSize":"11px","lineHeight":"14px","letterSpacing":"2px","textTransform":"uppercase","color":"#274962"}}>{p.label}</span>
 </button>
 </React.Fragment>))}
 </div>

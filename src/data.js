@@ -5,19 +5,12 @@ export const projects = [
     "photos": [
       {
         "src": "p01a.jpg",
-        "label": "On site"
-      },
-      {
-        "src": "p01b.jpg",
-        "label": "Installation"
       },
       {
         "src": "p01c.jpg",
-        "label": "Installation"
       },
       {
         "src": "p01d-finished.webp",
-        "label": "Finished"
       }
     ]
   },
@@ -27,15 +20,12 @@ export const projects = [
     "photos": [
       {
         "src": "p02a.jpg",
-        "label": "Installation"
       },
       {
         "src": "p02b.jpg",
-        "label": "Finished"
       },
       {
         "src": "p02c-finished.webp",
-        "label": "Finished"
       }
     ]
   },
@@ -45,15 +35,12 @@ export const projects = [
     "photos": [
       {
         "src": "p03a.jpg",
-        "label": "Installation"
       },
       {
         "src": "p03b.jpg",
-        "label": "Finished"
       },
       {
         "src": "p03d.jpg",
-        "label": "Finished"
       }
     ]
   },
@@ -63,15 +50,12 @@ export const projects = [
     "photos": [
       {
         "src": "p04a.jpg",
-        "label": "Finished"
       },
       {
         "src": "p04b.jpg",
-        "label": "Finished"
       },
       {
         "src": "p04c.jpg",
-        "label": "Finished"
       }
     ]
   },
@@ -81,11 +65,9 @@ export const projects = [
     "photos": [
       {
         "src": "p05a.jpg",
-        "label": "Finished"
       },
       {
         "src": "p05b.jpg",
-        "label": "Finished"
       }
     ]
   },
@@ -95,15 +77,12 @@ export const projects = [
     "photos": [
       {
         "src": "p06a.jpg",
-        "label": "Finished"
       },
       {
         "src": "p06b.jpg",
-        "label": "Finished"
       },
       {
         "src": "p06c-finished.webp",
-        "label": "Finished"
       }
     ]
   },
@@ -113,15 +92,12 @@ export const projects = [
     "photos": [
       {
         "src": "p07a.jpg",
-        "label": "Finished"
       },
       {
         "src": "p07b.jpg",
-        "label": "Finished"
       },
       {
         "src": "p07c.jpg",
-        "label": "Finished"
       }
     ]
   },
@@ -131,15 +107,12 @@ export const projects = [
     "photos": [
       {
         "src": "p08a.jpg",
-        "label": "Finished"
       },
       {
         "src": "p08b.jpg",
-        "label": "Finished"
       },
       {
         "src": "p08c.jpg",
-        "label": "Finished"
       }
     ]
   },
@@ -149,15 +122,12 @@ export const projects = [
     "photos": [
       {
         "src": "p09a.jpg",
-        "label": "Finished"
       },
       {
         "src": "p09b.jpg",
-        "label": "Finished"
       },
       {
         "src": "p09c.jpg",
-        "label": "Finished"
       }
     ]
   },
@@ -167,11 +137,9 @@ export const projects = [
     "photos": [
       {
         "src": "p10a.jpg",
-        "label": "Finished"
       },
       {
         "src": "p10b.jpg",
-        "label": "Finished"
       }
     ]
   },
@@ -181,11 +149,9 @@ export const projects = [
     "photos": [
       {
         "src": "p11a.jpg",
-        "label": "Installation"
       },
       {
         "src": "p11b.jpg",
-        "label": "Finished"
       }
     ]
   },
@@ -195,15 +161,12 @@ export const projects = [
     "photos": [
       {
         "src": "p12b.jpg",
-        "label": "Finished"
       },
       {
         "src": "p12c.jpg",
-        "label": "Installation"
       },
       {
         "src": "p12d.jpg",
-        "label": "Finished"
       }
     ]
   },
@@ -213,11 +176,9 @@ export const projects = [
     "photos": [
       {
         "src": "p13a.jpg",
-        "label": "Finished"
       },
       {
         "src": "p13b.jpg",
-        "label": "Finished"
       }
     ]
   }

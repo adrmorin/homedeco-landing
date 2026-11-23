@@ -48,3 +48,8 @@ details[open] > p{animation:faq-in .5s ease both}
 @keyframes faq-in{0%{opacity:0;transform:translateY(-10px)}100%{opacity:1;transform:translateY(0)}}
 @media (prefers-reduced-motion:reduce){.btn-cta,.btn-ghost,.btn-cta::after,.btn-ghost::before{transition:none}.btn-pulse,.btn-cta:hover svg,.btn-ghost:hover svg{animation:none}}
 .gallery{column-width:260px;column-gap:16px}
+.logo-intro{opacity:0;animation:logo-in .9s cubic-bezier(.16,1,.3,1) .15s forwards}
+.slogan-intro{opacity:0;animation:slogan-in .8s ease-out .65s forwards}
+@keyframes logo-in{0%{opacity:0;transform:translateY(-16px) scale(.92)}60%{opacity:1}100%{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes slogan-in{0%{opacity:0;transform:translateY(6px);letter-spacing:3px}100%{opacity:1;transform:translateY(0);letter-spacing:.5px}}
+@media (prefers-reduced-motion:reduce){.logo-intro,.slogan-intro{animation:none;opacity:1}}

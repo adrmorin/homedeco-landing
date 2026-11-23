@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { projects, gallery as galleryRaw, steps } from "./data.js";
 
 const asset = (f) => `${import.meta.env.BASE_URL}images/${f}`;
@@ -8,6 +8,18 @@ export default function App({ phone = "+1 (754) 210-1105", autoplay = true }) {
   const [slide, setSlide] = useState(0);
   const [photo, setPhoto] = useState(0);
   const [playing, setPlaying] = useState(true);
+  const heroRef = useRef(null);
+  const heroGlowRef = useRef(null);
+
+  const handleHeroMove = (e) => {
+    const el = heroRef.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    el.style.setProperty("--mx", ((e.clientX - r.left) / r.width * 100).toFixed(2) + "%");
+    el.style.setProperty("--my", ((e.clientY - r.top) / r.height * 100).toFixed(2) + "%");
+  };
+  const handleHeroEnter = () => { if (heroGlowRef.current) heroGlowRef.current.style.opacity = "1"; };
+  const handleHeroLeave = () => { if (heroGlowRef.current) heroGlowRef.current.style.opacity = "0"; };
 
   // Autoplay: advances through the photos of the current project (before -> after), then stops.
   useEffect(() => {
@@ -58,7 +70,8 @@ export default function App({ phone = "+1 (754) 210-1105", autoplay = true }) {
 <div style={{"width":"100%","background":"#FAF6F1","color":"#14202B","fontFamily":"'Inter',system-ui,sans-serif","overflow":"hidden"}}>
 
 
-<section style={{"position":"relative","background":"linear-gradient(135deg,#14202B 0%,#12343B 55%,#0E4850 100%)","color":"#FFFFFF"}}>
+<section ref={heroRef} onMouseMove={handleHeroMove} onMouseEnter={handleHeroEnter} onMouseLeave={handleHeroLeave} style={{"position":"relative","background":"linear-gradient(135deg,#14202B 0%,#12343B 55%,#0E4850 100%)","color":"#FFFFFF","--mx":"50%","--my":"40%"}}>
+<div ref={heroGlowRef} aria-hidden="true" style={{"position":"absolute","inset":"0","zIndex":"0","pointerEvents":"none","opacity":"0","transition":"opacity .4s ease","background":"radial-gradient(480px circle at var(--mx) var(--my),rgba(79,209,222,.32),rgba(79,209,222,.14) 40%,transparent 70%)"}}></div>
 <header style={{"position":"relative","zIndex":"1","maxWidth":"1240px","margin":"0 auto","padding":"28px 32px","boxSizing":"border-box","display":"flex","flexWrap":"wrap","alignItems":"center","justifyContent":"space-between","gap":"16px"}}>
 <div style={{"display":"flex","flexDirection":"column","alignItems":"center","textAlign":"center","gap":"6px"}}><img src={asset("logo-on-dark.svg")} alt="HOMEDECO" style={{"height":"38px","width":"auto","display":"block"}} /><span style={{"fontFamily":"'Cormorant Garamond',Georgia,serif","fontStyle":"italic","fontWeight":"400","color":"#C9A66B","fontSize":"15px","lineHeight":"18px","letterSpacing":".5px"}}>Luxury, shaped by light.</span></div>
 <a className="btn-ghost" href="tel:+17542101105" style={{"display":"inline-flex","alignItems":"center","gap":"10px","minHeight":"48px","padding":"0 24px","boxSizing":"border-box","border":"1px solid #C9A66B","color":"#FFFFFF","fontFamily":"'Montserrat',sans-serif","fontWeight":"600","fontSize":"14px","letterSpacing":"2px","textTransform":"uppercase","textDecoration":"none"}}>

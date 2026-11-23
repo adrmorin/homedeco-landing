@@ -52,10 +52,6 @@ export const projects = [
         "label": "Finished"
       },
       {
-        "src": "p03c.jpg",
-        "label": "Finished"
-      },
-      {
         "src": "p03d.jpg",
         "label": "Finished"
       }

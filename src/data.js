@@ -100,6 +100,10 @@ export const projects = [
       {
         "src": "p06b.jpg",
         "label": "Finished"
+      },
+      {
+        "src": "p06c.jpg",
+        "label": "Finished"
       }
     ]
   },

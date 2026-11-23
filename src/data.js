@@ -13,7 +13,7 @@ export const projects = [
       },
       {
         "src": "p01c.jpg",
-        "label": "Finished"
+        "label": "Installation"
       },
       {
         "src": "p01d.jpg",
@@ -27,7 +27,7 @@ export const projects = [
     "photos": [
       {
         "src": "p02a.jpg",
-        "label": "On site"
+        "label": "Installation"
       },
       {
         "src": "p02b.jpg",
@@ -181,7 +181,7 @@ export const projects = [
     "photos": [
       {
         "src": "p11a.jpg",
-        "label": "Finished"
+        "label": "Installation"
       },
       {
         "src": "p11b.jpg",
@@ -194,16 +194,12 @@ export const projects = [
     "desc": "Turquoise and white organic-cutout partitions frame a hotel lobby lounge.",
     "photos": [
       {
-        "src": "p12a.jpg",
-        "label": "Finished"
-      },
-      {
         "src": "p12b.jpg",
         "label": "Finished"
       },
       {
         "src": "p12c.jpg",
-        "label": "Finished"
+        "label": "Installation"
       },
       {
         "src": "p12d.jpg",

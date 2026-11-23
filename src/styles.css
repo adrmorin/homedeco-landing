@@ -20,45 +20,15 @@ details summary::-webkit-details-marker{display:none}
 .btn-cta:hover svg,.btn-ghost:hover svg{animation:ring .7s ease}
 @keyframes ring{0%,100%{rotate:0deg}15%{rotate:-14deg}30%{rotate:12deg}45%{rotate:-10deg}60%{rotate:8deg}75%{rotate:-4deg}}
 .btn-cta:focus-visible,.btn-ghost:focus-visible{outline:2px solid #C9A66B;outline-offset:4px}
-.pb{transform-box:fill-box;transform-origin:center;animation:pb-float 11s ease-in-out infinite alternate}
-.glow{animation:pb-glow 5s ease-in-out infinite alternate}
-@keyframes pb-float{0%{transform:translate(0,0) rotate(0deg)}100%{transform:translate(10px,-16px) rotate(5deg)}}
-@keyframes pb-glow{0%{opacity:.15}100%{opacity:1}}
 .slat{transform-box:fill-box;transform-origin:bottom;animation:slat-wave 4.5s ease-in-out infinite}
 @keyframes slat-wave{0%,100%{transform:scaleY(.3)}50%{transform:scaleY(1)}}
-.ic-breathe{transform-box:fill-box;transform-origin:bottom;animation:slat-wave 3.2s ease-in-out infinite}
-.ic-ring{transform-box:fill-box;transform-origin:center;animation:ic-ripple 3.6s ease-out infinite}
-@keyframes ic-ripple{0%{transform:scale(.25);opacity:0}15%{opacity:1}100%{transform:scale(1.15);opacity:0}}
-.ic-leaf{stroke-dasharray:90;animation:ic-draw 5s ease-in-out infinite}
-@keyframes ic-draw{0%{stroke-dashoffset:90}45%,80%{stroke-dashoffset:0}100%{stroke-dashoffset:-90}}
-.stone{transform-box:fill-box;transform-origin:center;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-direction:alternate;will-change:transform}
-@keyframes drift-a{0%{transform:translate(0,0) rotate(0deg) scale(1,1)}30%{transform:translate(calc(var(--dx)*.5),calc(var(--dy)*-.3)) rotate(calc(var(--rot)*.6)) scale(1.12,.9)}65%{transform:translate(var(--dx),calc(var(--dy)*.7)) rotate(var(--rot)) scale(.9,1.14)}100%{transform:translate(calc(var(--dx)*.3),var(--dy)) rotate(calc(var(--rot)*-.5)) scale(1.08,1)}}
-@keyframes drift-b{0%{transform:translate(0,0) rotate(0deg) scale(1,1)}25%{transform:translate(calc(var(--dx)*-.6),calc(var(--dy)*.5)) rotate(calc(var(--rot)*-.8)) scale(.88,1.1)}60%{transform:translate(calc(var(--dx)*.4),calc(var(--dy)*-1)) rotate(var(--rot)) scale(1.15,.92)}100%{transform:translate(var(--dx),calc(var(--dy)*.2)) rotate(calc(var(--rot)*.4)) scale(1,1.12)}}
-@keyframes drift-c{0%{transform:translate(0,0) rotate(0deg) scale(1,1)}40%{transform:translate(var(--dx),var(--dy)) rotate(calc(var(--rot)*1.2)) scale(1.18,.88)}70%{transform:translate(calc(var(--dx)*-.5),calc(var(--dy)*.6)) rotate(calc(var(--rot)*-.7)) scale(.92,1.1)}100%{transform:translate(calc(var(--dx)*.2),calc(var(--dy)*-.8)) rotate(calc(var(--rot)*.3)) scale(1.05,1.05)}}
-.glow-drift{animation:glow-drift 9s ease-in-out infinite alternate}
-@keyframes glow-drift{0%{opacity:.3;transform:translate(0,0) scale(.9)}100%{opacity:1;transform:translate(24px,-30px) scale(1.12)}}
-.glow-drift{transform-box:fill-box;transform-origin:center}
-.lit-a{animation-name:drift-a,lit-flicker-a !important;animation-direction:alternate,normal !important}
-.lit-b{animation-name:drift-c,lit-flicker-b !important;animation-direction:alternate,normal !important}
-@keyframes lit-flicker-a{0%,100%{fill-opacity:.2}18%{fill-opacity:.9}32%{fill-opacity:.45}55%{fill-opacity:1}78%{fill-opacity:.35}}
-@keyframes lit-flicker-b{0%,100%{fill-opacity:.9}22%{fill-opacity:.3}47%{fill-opacity:.8}70%{fill-opacity:.25}85%{fill-opacity:1}}
 .qr-box{transition:transform .35s ease,box-shadow .35s ease}
 .qr-box:hover{transform:translateY(-4px) rotate(-1.5deg);box-shadow:0 14px 30px rgba(0,0,0,.35)}
-.pebble{transform-box:fill-box;transform-origin:center;animation-timing-function:ease-in-out;animation-iteration-count:infinite;animation-direction:alternate}
-.pf-a{animation-name:pf-a}.pf-b{animation-name:pf-b}.pf-c{animation-name:pf-c}
-@keyframes pf-a{0%{transform:translate(0,0) rotate(0deg) scale(1)}50%{transform:translate(calc(var(--dx)*.4),calc(var(--dy)*1)) rotate(calc(var(--rot)*.5)) scale(1.025)}100%{transform:translate(var(--dx),calc(var(--dy)*.3)) rotate(var(--rot)) scale(1.04)}}
-@keyframes pf-b{0%{transform:translate(0,0) rotate(0deg) scale(1)}50%{transform:translate(calc(var(--dx)*-.6),calc(var(--dy)*.5)) rotate(calc(var(--rot)*-.6)) scale(.98)}100%{transform:translate(calc(var(--dx)*.8),calc(var(--dy)*-1)) rotate(calc(var(--rot)*.4)) scale(1.03)}}
-@keyframes pf-c{0%{transform:translate(0,0) rotate(0deg) scale(1)}50%{transform:translate(var(--dx),calc(var(--dy)*-.5)) rotate(var(--rot)) scale(1.04)}100%{transform:translate(calc(var(--dx)*-.5),var(--dy)) rotate(calc(var(--rot)*-.7)) scale(.99)}}
-.pglow{animation-iteration-count:infinite;animation-timing-function:ease-in-out;animation-direction:alternate}
-.pg-1{animation-name:pg-a}.pg-2{animation-name:pg-b}.pg-3{animation-name:pg-c}
-@keyframes pg-a{0%{opacity:.55}100%{opacity:1}}
-@keyframes pg-b{0%{opacity:1}40%{opacity:.6}100%{opacity:.85}}
-@keyframes pg-c{0%{opacity:.7}60%{opacity:1}100%{opacity:.5}}
 .car-btn{transition:background .3s ease,color .3s ease,transform .3s ease}
 .car-btn:hover{background:#274962 !important;color:#FFFFFF !important;transform:scale(1.08)}
 .car-btn:active{transform:scale(.94)}
 .car-btn:focus-visible,section button:focus-visible{outline:2px solid #C9A66B;outline-offset:3px}
-@media (prefers-reduced-motion:reduce){.car-btn{transition:none}.pebble,.pglow{animation:none}.qr-box{transition:none}details,.faq-q,.faq-ic,.faq-ic svg *{transition:none}details[open]>p{animation:none}.stone,.glow-drift,.pb,.glow,.slat,.ic-breathe,.ic-ring,.ic-leaf{animation:none}}
+@media (prefers-reduced-motion:reduce){.car-btn{transition:none}.qr-box{transition:none}details,.faq-q,.faq-ic,.faq-ic svg *{transition:none}details[open]>p{animation:none}.slat{animation:none}}
 details summary:hover{color:#274962}
 details{background-image:linear-gradient(#C9A66B,#C9A66B);background-repeat:no-repeat;background-position:left bottom;background-size:0 2px;transition:background-size .55s ease}
 details:hover,details[open]{background-size:100% 2px}

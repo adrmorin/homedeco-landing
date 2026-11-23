@@ -16,7 +16,7 @@ export const projects = [
         "label": "Installation"
       },
       {
-        "src": "p01d.jpg",
+        "src": "p01d-finished.png",
         "label": "Finished"
       }
     ]
@@ -34,7 +34,7 @@ export const projects = [
         "label": "Finished"
       },
       {
-        "src": "p02c.jpg",
+        "src": "p02c-finished.png",
         "label": "Finished"
       }
     ]
@@ -102,7 +102,7 @@ export const projects = [
         "label": "Finished"
       },
       {
-        "src": "p06c.jpg",
+        "src": "p06c-finished.png",
         "label": "Finished"
       }
     ]
@@ -248,7 +248,7 @@ export const gallery = [
     "alt": "Living room with decorative wall"
   },
   {
-    "src": "g-bar.jpg",
+    "src": "g-bar-finished.png",
     "alt": "Bar area with backlit wall"
   },
   {

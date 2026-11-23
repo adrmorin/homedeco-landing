@@ -177,7 +177,7 @@ export const projects = [
     "photos": [
       {
         "src": "p11a.jpg",
-        "label": "Installation"
+        "label": "On site"
       },
       {
         "src": "p11b.jpg",

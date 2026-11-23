@@ -92,7 +92,7 @@ Call to schedule a visit
 </div>
 <div style={{"position":"relative","flex":"1 1 380px","minWidth":"0","maxWidth":"520px","margin":"0 auto"}}>
 <div style={{"position":"absolute","top":"-20px","right":"-20px","left":"20px","bottom":"20px","border":"1px solid #C9A66B","borderRadius":"999px 999px 0 0"}}></div>
-<img src={asset("hero.jpg")} alt="Backlit pebble wall with a wood slat panel" style={{"position":"relative","display":"block","width":"100%","aspectRatio":"3/4","objectFit":"cover","borderRadius":"999px 999px 0 0"}} />
+<img src={asset("hero.jpg")} alt="Turquoise organic-cutout partition wall in a hotel lobby lounge" style={{"position":"relative","display":"block","width":"100%","aspectRatio":"3/4","objectFit":"cover","borderRadius":"999px 999px 0 0"}} />
 </div>
 </div>
 </section>
